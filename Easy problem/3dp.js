@@ -1,3 +1,4 @@
+// Write a program to check if a number is even or odd.(Ques)
 function checkEvenOrOdd(number) {
     if (number %2 === 0) {
         console.log(number + "is add")
