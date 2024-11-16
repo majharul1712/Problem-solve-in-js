@@ -1,7 +1,7 @@
-// Write a function to convert Fahrenheit to Celsius.
-let fahre = 90
-let celSiud = fahrenheitTocelsius (fahre)
-function fahrenheitTocelsius(fahre) {
-    return ((fahre - 32)* 5/9)
+// Write a function to convert Celsius to Fahrenheit.
+const n =  22
+
+function checkFahre(n) {
+    return ((n*9.0/5.0)+32.0)
 }
-console.log(fahrenheitTocelsius + "℉ is" + celSiud.toFixed(2)+ "℃" )
+console.log(checkFahre((n)))

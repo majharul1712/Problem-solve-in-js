@@ -1,7 +1,22 @@
-// Write a function to convert Celsius to Fahrenheit.
-const n =  22
+// Write a program to print the Fibonacci sequence up to a given number.
+function fibonacciUpTo(maxNumber) {
+    if (maxNumber < 0) {
+        console.log("Please enter a non-negative number.");
+        return;
+    }
 
-function checkFahre(n) {
-    return ((n*9.0/5.0)+32.0)
+    let a = 0, b = 1;
+    let fibonacciSequence = [];
+
+    while (a <= maxNumber) {
+        fibonacciSequence.push(a);
+        let temp = a;
+        a = b;
+        b = temp + b;
+    }
+
+    console.log(`Fibonacci sequence up to ${maxNumber}: ${fibonacciSequence.join(", ")}`);
 }
-console.log(checkFahre((n)))
+
+// Example: Call the function with a number
+fibonacciUpTo(50);
