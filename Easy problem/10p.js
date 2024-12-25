@@ -20,3 +20,4 @@ function fibonacciUpTo(maxNumber) {
 
 // Example: Call the function with a number
 fibonacciUpTo(50);
+console.log(a)
